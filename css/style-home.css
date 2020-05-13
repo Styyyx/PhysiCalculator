@@ -1,0 +1,133 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.panel {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 139, 0.9)
+}
+
+.navbar {
+  height: 100vh;
+  width: 22.5vw;
+  position: fixed;
+  left: -22.5vw;
+  transition: left 0.5s;
+  background-color: gray;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar div {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.navbar a {
+  font-size: 1em;
+  text-decoration: none;
+  margin: 0.5em 0;
+}
+
+.navbar a:hover {
+  color: blue;
+}
+
+/* #region Home */
+.panel#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel#home .title{
+  font-size: 4em;
+  margin: 0.5em;
+}
+
+.panel#home .text {
+  font-size: 2em;
+}
+
+.panel#home a {
+  text-decoration: none;
+}
+
+.panel#home .buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel#home .buttons #row-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel#home .buttons #row-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel#home .buttons .button {
+  font-size: 1.5em;
+  padding: 1.5em;
+  margin: 10px;
+  background-color: coral;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.panel#home .buttons .button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region Speed and Velocity */
+.panel#speed {
+  background-color: red;
+}
+/* #endregion */
+
+/* #region Distance and Displacement */
+.panel#distance {
+  background-color: green;
+}
+/* #endregion */
+
+/* #region Acceleration */
+.panel#acceleration {
+  background-color: yellow;
+}
+/* #endregion */
+
+/* #region Kinematics */
+.panel#kinematics {
+  background-color: orange;
+}
+/* #endregion */
+
+/* #region Projectile Motion */
+.panel#projectile {
+  background-color: aquamarine;
+}
+/* #endregion */
