@@ -5,9 +5,6 @@
 ### Topics
   - Speed and Velocity
   - Projectile Motion
-  - Kinematics
-  - Distance and Displacement
-  - Acceleration
   
 ***
 
