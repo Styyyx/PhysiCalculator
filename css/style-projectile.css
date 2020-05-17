@@ -1,0 +1,35 @@
+.panel#projectile .form .data#distance-var-given {
+  position: relative;
+  left: 45%;
+  width: 55%;
+}
+
+.panel#projectile .result {
+  width: 35vw;
+  height: auto;
+  position: relative;
+  left: 62.5vw;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+.panel#projectile #btnSolve {
+  color: white;
+  background-color: peru;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  left: 62.5vw;
+  padding: 1em;
+  font-size: 1.5em;
+  border-radius: 5px;
+  margin: 1.5em;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.panel#projectile #btnSolve:hover {
+  transform: scale(1.2);
+}
