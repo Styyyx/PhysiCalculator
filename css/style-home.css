@@ -70,7 +70,7 @@ html, body {
   cursor: pointer;
 }
 
-.panel .missing {
+.panel .method {
   position: relative;
   left: 25vw;
   top: 7.5vh;
@@ -80,11 +80,11 @@ html, body {
   font-size: 1.25em;
 }
 
-.panel .missing div {
+.panel .method div {
   margin: 0 1em;
 }
 
-.panel .missing select {
+.panel .method select {
   border-radius: 5px;
   color: white;
   background-color: peru;
