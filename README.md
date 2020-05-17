@@ -17,10 +17,7 @@ Date of submission: May 24, 2020
 
 ### Members:
   - Alcantara, Patrick
-  - Ancheta, Isabel
   - Baroma, Hannah
   - Bernardo, Reanne
   - Dela Pena, Ezra
-  - Esteron, Geezan
-  - Galicia, Desiree
   - Pasturan, Ian
