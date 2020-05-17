@@ -34,7 +34,65 @@
     </div>
   </div>
 
-  <div class="panel" id="speed"></div>
+  <div class="panel" id="speed">
+    <div class="title">Speed and Velocity</div>
+    <div class="calcMethod">
+      <label>Solve for:</label>
+      <select id="speed">
+        <option value="speed" placeholder="Speed">Speed</option>
+        <option value="distance" placeholder="Distance">Distance</option>
+        <option value="time" placeholder="Time">Time</option>
+      </select>
+    </div>
+    <div id="calcParam">
+      <form action="">
+        <div>
+          <span>Speed</span>
+          <input type="text" id="speed" placeholder="speed">
+          <select>
+            <option value="inch">in</option>
+            <option value="foot">ft</option>
+            <option value="miles">mi</option>
+            <option value="centimeter">cm</option>
+            <option value="meter">cm</option>
+            <option value="kilometer">cm</option>
+          </select>
+        </div>
+        <div>
+          <span>Distance</span>
+          <input type="text" id="dist" placeholder="distance">
+          <select>
+            <option value="inch per second">in/s</option>
+            <option value="inch per minute">in/min</option>
+            <option value="foot per second">ft/s</option>
+            <option value="foot per minute">ft/min</option>
+            <option value="centimeter per second">cm/s</option>
+            <option value="centimeter per minute">cm/min</option>
+            <option value="meter per second">m/s</option>
+            <option value="meter per minute">m/min</option>
+            <option value="mile per second">mi/s</option>
+            <option value="mile per minute">mi/min</option>
+            <option value="mile per hour">mi/hr (mph)</option>
+            <option value="kilometer per second">km/s</option>
+            <option value="kilometer per minute">km/min</option>
+            <option value="kilometer per hour">km/hr (kph)</option>
+          </select>
+        </div>
+        <div>
+          <span>Time</span>
+          <input type="text" id="time" placeholder="time">
+          <select>
+            <option value="second">s</option>
+            <option value="minute">min</option>
+            <option value="hour">hr</option>
+            <option value="hhmmss">hh:mm:ss</option>
+          </select>
+        </div>
+        <button type="button">CLEAR</button>
+        <button type="button">CALCULATE</button>
+      </form>
+  </div>
+  </div>
 
   <div class="panel" id="distance"></div>
 
