@@ -55,7 +55,7 @@ $('.panel#projectile #btnSolve').on('click', function () {
       }
     }
 
-    $('.panel#projectile .result').css('user-select', 'text');
+    $('.panel#projectile .result div').css('user-select', 'text');
   }
 });
 
@@ -74,7 +74,7 @@ function IsFormComplete(el) {
 }
 
 function ShowResult(result, unit) {
-  $('.panel#projectile .result div').text(`Result: ${Math.round((result + Number.EPSILON) * 100) / 100}`);
+  $('.panel#projectile .result div').text(`${Math.round((result + Number.EPSILON) * 100) / 100}`);
 }
 
 function GetData(el) {
