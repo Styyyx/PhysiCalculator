@@ -106,28 +106,3 @@ html, body {
 .panel#speed {
   background-color: #0F4C81;
 }
-/* #endregion */
-
-/* #region Distance and Displacement */
-.panel#distance {
-  background-color: green;
-}
-/* #endregion */
-
-/* #region Acceleration */
-.panel#acceleration {
-  background-color: yellow;
-}
-/* #endregion */
-
-/* #region Kinematics */
-.panel#kinematics {
-  background-color: orange;
-}
-/* #endregion */
-
-/* #region Projectile Motion */
-.panel#projectile {
-  background-color: aquamarine;
-}
-/* #endregion */
