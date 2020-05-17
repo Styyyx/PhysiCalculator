@@ -8,8 +8,8 @@ $('.navbar a[href="#home"]').on('click', () => {
 
 // Prevents highlighting/selecting elements on drag
 $('*').attr('unselectable', 'on')
-  .css('user-select', 'none')
-  .bind('selectstart', function () { return false; });
+  .css('user-select', 'none');
+  // .bind('selectstart', function () { return false; });
 
 $('.form .data input').on('keypress', (e) => {
   if (e.key >= 0 && e.key <= 9) {

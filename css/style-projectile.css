@@ -1,18 +1,29 @@
-.panel#projectile .form .data#distance-var-given {
+.panel#projectile .result {
+  display: flex;
+  flex-direction: row;
+  left: 62.5vw;
   position: relative;
-  left: 45%;
-  width: 55%;
+  align-items: center;
+  width: fit-content;
 }
 
-.panel#projectile .result {
-  width: 35vw;
+.panel#projectile .result div{
+  width: 25vw;
   height: auto;
-  position: relative;
-  left: 62.5vw;
   background-color: white;
   border-radius: 5px;
   padding: 0.5em;
   font-size: 1.5em;
+}
+
+.panel#projectile .result select {
+  background-color: peru;
+  font-size: 1em;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1em;
+  height: fit-content;
 }
 
 .panel#projectile #btnSolve {
@@ -21,7 +32,7 @@
   width: fit-content;
   height: fit-content;
   position: relative;
-  left: 62.5vw;
+  left: 72.5vw;
   padding: 1em;
   font-size: 1.5em;
   border-radius: 5px;
