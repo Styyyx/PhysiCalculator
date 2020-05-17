@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,26 @@
   <link rel="stylesheet" type="text/css" href="./css/style-home.css">
   <link rel="stylesheet" type="text/css" href="./css/style-projectile.css">
 </head>
+
 <body>
   <div class="navbar">
     <div>PhysiCalculator</div>
     <a href="#home">HOME</a>
     <a href="#speed">SPEED AND VELOCITY</a>
-    <a href="#distance">DISTANCE AND DISPLACEMENT</a>
-    <a href="#acceleration">ACCELERATION</a>
-    <a href="#kinematics">EQUATION OF KINEMATICS</a>
     <a href="#projectile">PROJECTILE MOTION</a>
   </div>
 
   <div class="panel" id="home">
-    <div class="title">KINEMATICS CALCULATOR</div>
+    <div id="title">KINEMATICS CALCULATOR</div>
     <div class="text">What would you like to calculate?</div>
     <div class="buttons">
       <div id="row-1">
-        <a href="#speed"><div class="button">SPEED AND VELOCITY</div></a>
-        <a href="#distance"><div class="button">DISTANCE AND DISPLACEMENT</div></a>
-        <a href="#acceleration"><div class="button">ACCELERATION</div></a>
-      </div>
-      <div id="row-2">
-        <a href="#kinematics"><div class="button">EQUATION OF KINEMATICS</div></a>
-        <a href="#projectile"><div class="button">PROJECTILE MOTION</div></a>
+        <a href="#speed">
+          <div class="button">SPEED AND VELOCITY</div>
+        </a>
+        <a href="#projectile">
+          <div class="button">PROJECTILE MOTION</div>
+        </a>
       </div>
     </div>
   </div>
@@ -101,12 +99,53 @@
   <div class="panel" id="kinematics"></div>
 
   <div class="panel" id="projectile">
-    <div class="title">Projectile Motion</div>
-  </div>
+    <div class="title">Projectile Motion on
+      <select>
+        <option>Flat Surface</option>
+        <option>Uneven Surface</option>
+      </select>
+    </div>
+    <div class="missing">
+      <div>Solve for:</div>
+      <select>
+        <option>Range</option>
+        <option>Time of Flight</option>
+        <option>Maximum Height</option>
+      </select>
+    </div>
+    <div class="form">
+      <div class="data" id="vi">
+        <div>Initial Velocity</div>
+        <input>
+        <select>
+          <option>m/s</option>
+          <option>in/s</option>
+        </select>
+      </div>
+      <div class="data" id="angle">
+        <div>Angle &theta;</div>
+        <input>
+        <select>
+          <option>degrees</option>
+          <option>radians</option>
+        </select>
+      </div>
+    </div>
 
-  <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
-  <script src="./js/unit.js" type="text/javscript"></script>
-  <script src="./js/js-projectile.js"></script>
-  <script src="./js/js-home.js" type="text/javascript"></script>
+    <div id="btnSolve">SOLVE!</div>
+    <div class="result">
+      <div>Result:</div>
+      <select>
+        <option>m/s</option>
+        <option>in/s</option>
+      </select>
+    </div>
+
+    <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="./js/unit.js" type="text/javscript"></script>
+    <script src="./js/formula.js" type="text/javascript"></script>
+    <script src="./js/js-projectile.js" type="text/javascript"></script>
+    <script src="./js/js-base.js" type="text/javascript"></script>
 </body>
+
 </html>
