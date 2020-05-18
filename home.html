@@ -105,34 +105,26 @@
         <option>Range</option>
         <option>Time of Flight</option>
         <option>Maximum Height</option>
+        <option>Final Velocity</option>
       </select>
     </div>
     <div class="form">
       <div class="data" id="vi">
         <div>Initial Velocity</div>
         <input>
-        <select>
-          <option>m/s</option>
-          <option>in/s</option>
-        </select>
+      <div class="unit">m/s</div>
       </div>
       <div class="data" id="angle">
-        <div>Angle</div>
+        <div>Angle &theta;</div>
         <input>
-        <select>
-          <option>degrees</option>
-          <option>radians</option>
-        </select>
+        <div class="unit">degrees</div>
       </div>
     </div>
 
     <div id="btnSolve">SOLVE!</div>
     <div class="result">Result:
-      <div></div>
-      <select>
-        <option>meters</option>
-        <option>inches</option>
-      </select>
+      <div class="num"></div>
+      <div class="unit"></div>
     </div>
 
     <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>

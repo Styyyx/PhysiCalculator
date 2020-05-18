@@ -7,24 +7,17 @@
   width: fit-content;
   background-color: white;
   font-size: 1.5em;
+  border-radius: 5px;
+  padding: 0.5em;
 }
 
-.panel#projectile .result div{
-  width: 25vw;
+.panel#projectile .result .num + .unit{
+  width: fit-content;
   height: auto;
   background-color: white;
   border-radius: 5px;
   font-size: 1em;
-}
-
-.panel#projectile .result select {
-  background-color: peru;
-  font-size: 1em;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 1em;
-  height: fit-content;
+  margin: 0 0.5em;
 }
 
 .panel#projectile #btnSolve {

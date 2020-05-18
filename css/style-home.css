@@ -90,6 +90,7 @@ html, body {
   background-color: peru;
   font-size: .75em;
   cursor: pointer;
+  width: auto;
 }
 
 .panel .form {
@@ -125,16 +126,8 @@ html, body {
   width: 30%;
 }
 
-.panel .form .data select {
-  border-radius: 5px;
-  color: white;
-  background-color: peru;
-  font-size: 0.75em;
-  margin-left: 1em;
-}
-
-.panel .form .data select:hover {
-  cursor: pointer;
+.panel .form .data .unit {
+  margin: 0 0.5em;
 }
 
 .panel .form .button#solve {
