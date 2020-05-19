@@ -1,3 +1,4 @@
 $('#clearBtn').on('click', function(){
-    $('.panel#speed .form # input').attr('value', '');
+    $('.panel#speed .form .data #s').val("");
+    console.log("nyenyenyenye");
 });
