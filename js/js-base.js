@@ -3,7 +3,7 @@ $('.panel#home a').on('click', () => {
 });
 
 $('.navbar a[href="#home"]').on('click', () => {
-  $('.navbar').css('left', '-22.5vw');
+  $('.navbar').css('left', '-26vw');
 });
 
 // Prevents highlighting/selecting elements on drag

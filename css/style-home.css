@@ -17,9 +17,9 @@ html, body {
   height: 100vh;
   width: 18.22vw;
   position: fixed;
-  left: -22.5vw;
+  left: -26vw;
   transition: left 0.5s;
-  background-color: gray;
+  background-color:#1B262C;
   padding: 1.5em;
   display: flex;
   flex-direction: column;
@@ -36,10 +36,12 @@ html, body {
   text-decoration: none;
   margin: 0.5em 0;
   color: white;
+  transition: 0.2s;
 }
 
 .navbar a:hover {
-  color: blue;
+  transform: scale(1.05);
+  color:#ED6663;
 }
 
 /* #endregion */
@@ -48,7 +50,7 @@ html, body {
 .panel {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 139, 0.9)
+  background-color: #0F4C81;
 }
 
 .panel .title {
@@ -63,7 +65,7 @@ html, body {
 
 .panel .title select {
   font-size: 0.75em;
-  background-color: peru;
+  background-color:#ED6663;
   color: white;
   border-radius: 5px;
   margin-left: 1em;
@@ -87,7 +89,7 @@ html, body {
 .panel .method select {
   border-radius: 5px;
   color: white;
-  background-color: peru;
+  background-color:#ED6663;
   font-size: .75em;
   cursor: pointer;
   width: auto;
@@ -124,6 +126,7 @@ html, body {
   border: 0;
   border-bottom: 1px solid black;
   width: 30%;
+  font-size: 1em;
 }
 
 .panel .form .data .unit {
@@ -133,7 +136,7 @@ html, body {
 .panel .form .button#solve {
   font-size: 1.5em;
   border-radius: 5px;
-  background-color: peru;
+  background-color:#ED6663;
   color: white;
   cursor: pointer;
   margin: 1em;
@@ -194,20 +197,42 @@ html, body {
   font-size: 1.5em;
   padding: 1.5em;
   margin: 10px;
-  background-color: coral;
+  background-color:#ED6663;
   border-radius: 15px;
   color: white;
+  transition: 0.2s;
 }
 
 .panel#home .buttons .button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-
 /* #endregion */
 
 /* #region Speed and Velocity */
-.panel#speed {
-  background-color: #0F4C81;
+.panel#speed .buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.panel#speed .buttons .button {
+  color: white;
+  background-color: #ED6663;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  left: 24.5vw;
+  top: 13vh;
+  padding: 1em;
+  font-size: 1.5em;
+  border-radius: 15px;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.panel#speed .button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 /* #endregion */
