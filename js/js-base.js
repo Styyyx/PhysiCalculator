@@ -4,6 +4,13 @@ $('.panel#home a').on('click', () => {
 
 $('.navbar a[href="#home"]').on('click', () => {
   $('.navbar').css('left', '-26vw');
+  $('.panel#speed .form .data input').val('');
+  $('.panel#projectile .form .data input').val('');
+});
+
+$('.navbar a').on('click', () => {
+  $('.panel#speed .form .data input').val('');
+  $('.panel#projectile .form .data input').val('');
 });
 
 // Prevents highlighting/selecting elements on drag
