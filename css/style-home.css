@@ -240,4 +240,27 @@ html, body {
   border-radius: 5px;
   padding: 0.5em;
 }
+
+.panel .option {
+  position: relative;
+  left: 25vw;
+  top: 7.5vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25em;
+}
+
+.panel .option div {
+  margin: 0 1em;
+}
+
+.panel .option select {
+  border-radius: 5px;
+  color: white;
+  background-color:#ED6663;
+  font-size: .75em;
+  cursor: pointer;
+  width: auto;
+}
 /* #endregion */

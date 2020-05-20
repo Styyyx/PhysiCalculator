@@ -1,3 +1,31 @@
+function GetSpeed(dist, speedTime) {
+  return dist / speedTime;
+}
+
+function GetDist(speed, speedTime) {
+  return speed * speedTime;
+}
+
+function GetTime(speed, dist) {
+  return dist / speed;
+}
+
+function GetFinalVelocity(vi, acc, velocityTime) {
+  return vi + (acc* velocityTime);
+}
+
+function GetInitialVelocity(vf, acc, velocityTime) {
+  return vf - (acc * velocityTime);
+}
+
+function GetAcceleration(vf, vi, velocityTime) {
+  return (vf - vi) / velocityTime;
+}
+
+function GetVelocityTime() {
+  return (vf - vi) / acc;
+}
+
 /** Returns the initial velocity at Y-Axis. Angle is converted to radians by default.
  * 
  * @param {number} velocity Initial velocity in m/s
