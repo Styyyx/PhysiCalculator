@@ -66,38 +66,38 @@ $('.panel#projectile #btnSolve').on('click', function () {
     if (isFlat) {
       switch (methodIndex) {
         case 0: {
-          ShowResult(GetFlatRange(data.vi, data.angle), 'meters');
+          ShowResult('projectile', GetFlatRange(data.vi, data.angle), 'meters');
           break;
         }
         case 1: {
-          ShowResult(GetFlatFlightTime(data.vi, data.angle), 'seconds');
+          ShowResult('projectile', GetFlatFlightTime(data.vi, data.angle), 'seconds');
           break;
         }
         case 2: {
-          ShowResult(GetMaxHeight(data.vi, data.angle), 'meters');
+          ShowResult('projectile', GetMaxHeight(data.vi, data.angle), 'meters');
           break;
         }
         case 3: {
-          ShowResult(GetFlatFinalVelocity(data.vi, data.angle, data.time), 'm/s');
+          ShowResult('projectile', GetFlatFinalVelocity(data.vi, data.angle, data.time), 'm/s');
           break;
         }
       }
     } else {
       switch (methodIndex) {
         case 0: {
-          ShowResult(GetUnevenRange(data.vi, data.angle, data.time), 'meters');
+          ShowResult('projectile', GetUnevenRange(data.vi, data.angle, data.time), 'meters');
           break;
         }
         case 1: {
-          ShowResult(GetUnevenFlightTime(data.vi, data.angle, data.iheight), 'seconds');
+          ShowResult('projectile', GetUnevenFlightTime(data.vi, data.angle, data.iheight), 'seconds');
           break;
         }
         case 2: {
-          ShowResult(GetMaxHeight(data.vi, data.angle), 'meters');
+          ShowResult('projectile', GetMaxHeight(data.vi, data.angle), 'meters');
           break;
         }
         case 3: {
-          ShowResult(GetUnevenInitialHeight(data.vi, data.angle, data.time), 'meters');
+          ShowResult('projectile', GetUnevenInitialHeight(data.vi, data.angle, data.time), 'meters');
         }
       }
     }
@@ -119,9 +119,9 @@ function IsFormComplete(el) {
   return complete;
 }
 
-function ShowResult(result, unit) {
-  $('.panel#projectile .result .num').text(`${Math.round((result + Number.EPSILON) * 100) / 100}`);
-  $('.panel#projectile .result .unit').text(unit);
+function ShowResult(panelID, result, unit) {
+  $(`.panel#${panelID} .result .num`).text(`${Math.round((result + Number.EPSILON) * 100) / 100}`);
+  $(`.panel#${panelID} .result .unit`).text(unit);
 }
 
 function GetData(el) {
