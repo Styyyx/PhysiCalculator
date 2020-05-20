@@ -21,7 +21,7 @@
     <div id="title">KINEMATICS CALCULATOR</div>
     <div class="text">What would you like to calculate?</div>
     <div class="buttons">
-      <div id="row-1">
+      <div id="row">
         <a href="#speed">
           <div class="button">SPEED AND VELOCITY</div>
         </a>
@@ -34,63 +34,43 @@
 
   <div class="panel" id="speed">
     <div class="title">Speed and Velocity</div>
-    <div class="calcMethod">
-      <label>Solve for:</label>
-      <select id="speed">
-        <option value="speed" placeholder="Speed">Speed</option>
-        <option value="distance" placeholder="Distance">Distance</option>
-        <option value="time" placeholder="Time">Time</option>
+    <div class="option">
+      <div>Choose a Calculation:</div>
+      <select>
+        <option>Speed</option>
+        <option>Velocity</option>
       </select>
     </div>
-    <div id="calcParam">
-      <form action="">
-        <div>
-          <span>Speed</span>
-          <input type="text" id="speed" placeholder="speed">
-          <select>
-            <option value="inch">in</option>
-            <option value="foot">ft</option>
-            <option value="miles">mi</option>
-            <option value="centimeter">cm</option>
-            <option value="meter">cm</option>
-            <option value="kilometer">cm</option>
-          </select>
-        </div>
-        <div>
-          <span>Distance</span>
-          <input type="text" id="dist" placeholder="distance">
-          <select>
-            <option value="inch per second">in/s</option>
-            <option value="inch per minute">in/min</option>
-            <option value="foot per second">ft/s</option>
-            <option value="foot per minute">ft/min</option>
-            <option value="centimeter per second">cm/s</option>
-            <option value="centimeter per minute">cm/min</option>
-            <option value="meter per second">m/s</option>
-            <option value="meter per minute">m/min</option>
-            <option value="mile per second">mi/s</option>
-            <option value="mile per minute">mi/min</option>
-            <option value="mile per hour">mi/hr (mph)</option>
-            <option value="kilometer per second">km/s</option>
-            <option value="kilometer per minute">km/min</option>
-            <option value="kilometer per hour">km/hr (kph)</option>
-          </select>
-        </div>
-        <div>
-          <span>Time</span>
-          <input type="text" id="time" placeholder="time">
-          <select>
-            <option value="second">s</option>
-            <option value="minute">min</option>
-            <option value="hour">hr</option>
-            <option value="hhmmss">hh:mm:ss</option>
-          </select>
-        </div>
-        <button type="button">CLEAR</button>
-        <button type="button">CALCULATE</button>
-      </form>
+    <div class="method">
+      <div>Solve for:</div>
+      <select>
+        <option>Speed</option>
+        <option>Distance</option>
+        <option>Time</option>
+      </select>
+    </div>
+    <div class="form">
+      <div class="data" id="dist">
+        <div>Distance</div>
+        <input>
+        <div class="unit">m</div>
+      </div>
+      <div class="data" id="speedTime">
+        <div>Time</div>
+        <input>
+        <div class="unit">seconds</div>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="button" id="btnClear">CLEAR</div>
+      <div class="button" id="btnCalculate">CALCULATE</div>
+    </div>
+    <div class="result">Result:
+      <div class="num"></div>
+      <div class="unit"></div>
+    </div>
   </div>
-  </div>
+
 
   <div class="panel" id="projectile">
     <div class="title">Projectile Motion on
@@ -112,7 +92,7 @@
       <div class="data" id="vi">
         <div>Initial Velocity</div>
         <input>
-      <div class="unit">m/s</div>
+        <div class="unit">m/s</div>
       </div>
       <div class="data" id="angle">
         <div>Angle &theta;</div>
@@ -126,12 +106,14 @@
       <div class="num"></div>
       <div class="unit"></div>
     </div>
+  </div>
 
-    <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
-    <script src="./js/unit.js" type="text/javscript"></script>
-    <script src="./js/formula.js" type="text/javascript"></script>
-    <script src="./js/js-projectile.js" type="text/javascript"></script>
-    <script src="./js/js-base.js" type="text/javascript"></script>
+  <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="./js/unit.js" type="text/javscript"></script>
+  <script src="./js/formula.js" type="text/javascript"></script>
+  <script src="./js/js-speed.js" type="text/javascript"></script>
+  <script src="./js/js-projectile.js" type="text/javascript"></script>
+  <script src="./js/js-base.js" type="text/javascript"></script>
 </body>
 
 </html>
